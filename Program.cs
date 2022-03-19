@@ -42,7 +42,7 @@ namespace Modul4_1302204050
         {
             for (int i = 0; i < this.storeData.Count; i++)
             {
-                Console.WriteLine("Data" +1 + "berisi" + this.storeData[i] + ",data yang disimpan waktu UTC" + this.inputDates[i]);
+                Console.WriteLine("Data" +1 + "berisi" + this.storeData[i] + ",data yang disimpan waktu UTC" + this.inputDates[]);
             }
         }
     }
