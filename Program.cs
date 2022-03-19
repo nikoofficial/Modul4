@@ -21,6 +21,29 @@ namespace Modul4_1302204050
         dynamic c = input3;
 
         return a + b + c;
+    }
+    class SimpleDataBase<T>
+    {
+        private List<T> storeData;
+        private List<DataTime> inputDates;
 
+        public SimpleDataBase()
+        {
+            this.storeData = new List<T>();
+            this.inputDates = new List<T>();
+
+        }
+        public void AddNewData(T newData)
+        {
+            this.inputDates.Add(newData.Now);
+            this.storeData.Add(newData);
+        }
+        public void PrintAllNewData()
+        {
+            for (int i = 0; i < this.storeData.Count; i++)
+            {
+                Console.WriteLine("Data" +1 + "berisi" + this.storeData[i] + ",data yang disimpan waktu UTC" + this.inputDates[i]);
+            }
+        }
     }
 }
